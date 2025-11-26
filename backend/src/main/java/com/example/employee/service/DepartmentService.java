@@ -1,11 +1,14 @@
 package com.example.employee.service;
 
 import com.example.employee.model.Department;
+import com.example.employee.dto.DepartmentDTO;
 import com.example.employee.repository.DepartmentRepository;
+import com.example.employee.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class DepartmentService {
@@ -13,8 +16,16 @@ public class DepartmentService {
     @Autowired
     private DepartmentRepository departmentRepository;
     
-    public List<Department> getAllDepartments() {
-        return departmentRepository.findAll();
+    @Autowired
+    private EmployeeRepository employeeRepository;
+    
+    public List<DepartmentDTO> getAllDepartments() {
+        return departmentRepository.findAll().stream()
+                .map(dept -> {
+                    Long count = employeeRepository.countByDepartment(dept);
+                    return new DepartmentDTO(dept, count);
+                })
+                .collect(Collectors.toList());
     }
     
     public Department getDepartmentById(Long id) {

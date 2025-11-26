@@ -23,7 +23,7 @@ const EmployeeModal = ({ employee, onClose, onSuccess }) => {
                 lastName: employee.lastName || '',
                 email: employee.email || '',
                 position: employee.position || '',
-                department: employee.department || ''
+                department: employee.department?.name || employee.department || ''
             });
         }
     }, [employee]);
@@ -45,11 +45,16 @@ const EmployeeModal = ({ employee, onClose, onSuccess }) => {
 
         setLoading(true);
         try {
+            const payload = {
+                ...formData,
+                department: formData.department ? { name: formData.department } : null
+            };
+
             if (employee) {
-                await updateEmployee(employee.id, formData);
+                await updateEmployee(employee.id, payload);
                 toast.success('Employee updated successfully');
             } else {
-                await createEmployee(formData);
+                await createEmployee(payload);
                 toast.success('Employee created successfully');
             }
             onSuccess();

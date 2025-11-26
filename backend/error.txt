@@ -1,0 +1,205 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.example:employee-management >-------------------
+[INFO] Building employee-management 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ employee-management ---
+[INFO] Deleting C:\Users\Aseuro\Desktop\fullstack\backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ employee-management ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ employee-management ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 10 source files with javac [debug release 17] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[20,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[21,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[22,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[23,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[24,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[25,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[26,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[27,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[28,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[29,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[30,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[31,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[32,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[33,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[34,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[35,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[36,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[38,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[39,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[40,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[41,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[42,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[43,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[44,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[45,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[47,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[49,22] cannot find symbol
+  symbol:   variable AriaRole
+  location: class com.example.employee.EmployeeManagementApplication
+[INFO] 27 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.422 s
+[INFO] Finished at: 2025-11-26T15:33:56+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project employee-management: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[20,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[21,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[22,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[23,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[24,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[25,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[26,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[27,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[28,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[29,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[30,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[31,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[32,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[33,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[34,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[35,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[36,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[38,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[39,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[40,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[41,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[42,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[43,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[44,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[45,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[47,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] /C:/Users/Aseuro/Desktop/fullstack/backend/src/main/java/com/example/employee/EmployeeManagementApplication.java:[49,22] cannot find symbol
+[ERROR]   symbol:   variable AriaRole
+[ERROR]   location: class com.example.employee.EmployeeManagementApplication
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

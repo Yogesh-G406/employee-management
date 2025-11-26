@@ -80,8 +80,8 @@ const Departments = () => {
 
     // Calculate department statistics
     const deptStats = departments.map(dept => {
-        const empCount = employees.filter(e => e.department === dept.name).length;
-        return { ...dept, employeeCount: empCount };
+        const empCount = employees.filter(e => e.departmentName === dept.name).length;
+        return { ...dept, employeeCount: dept.employeeCount || empCount };
     });
 
     const totalEmployees = employees.length;
@@ -202,7 +202,7 @@ const Departments = () => {
                 {deptStats.length > 0 ? (
                     <div className="divide-y divide-gray-200">
                         {deptStats.map((dept, index) => {
-                            const deptEmployees = employees.filter(e => e.department === dept.name);
+                            const deptEmployees = employees.filter(e => e.departmentName === dept.name);
                             return (
                                 <div key={dept.id} className="p-6 hover:bg-gray-50 transition-colors">
                                     <div className="flex items-center justify-between">

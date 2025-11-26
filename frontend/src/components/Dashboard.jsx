@@ -20,13 +20,13 @@ const Dashboard = () => {
         try {
             const response = await listEmployees();
             const employees = response.data;
-            const uniqueDepartments = [...new Set(employees.map(e => e.department).filter(d => d))];
+            const uniqueDepartments = [...new Set(employees.map(e => e.department?.name || e.department).filter(d => d))];
 
             setStats({
                 totalEmployees: employees.length,
                 departments: uniqueDepartments.length,
-                newThisMonth: employees.length, // Simplified
-                activeProjects: 12 // Mock data
+                newThisMonth: employees.length,
+                activeProjects: 12
             });
         } catch (error) {
             console.error('Error loading stats:', error);

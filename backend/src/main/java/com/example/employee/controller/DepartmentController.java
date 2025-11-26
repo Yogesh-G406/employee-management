@@ -1,6 +1,7 @@
 package com.example.employee.controller;
 
 import com.example.employee.model.Department;
+import com.example.employee.dto.DepartmentDTO;
 import com.example.employee.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,14 +11,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/departments")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5173"})
 public class DepartmentController {
     
     @Autowired
     private DepartmentService departmentService;
     
     @GetMapping
-    public List<Department> getAllDepartments() {
+    public List<DepartmentDTO> getAllDepartments() {
         return departmentService.getAllDepartments();
     }
     
@@ -28,14 +29,23 @@ public class DepartmentController {
     }
     
     @PostMapping
-    public Department createDepartment(@RequestBody Department department) {
-        return departmentService.createDepartment(department);
+    public ResponseEntity<?> createDepartment(@RequestBody Department department) {
+        try {
+            Department createdDepartment = departmentService.createDepartment(department);
+            return ResponseEntity.ok(createdDepartment);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
     
     @PutMapping("/{id}")
-    public ResponseEntity<Department> updateDepartment(@PathVariable Long id, @RequestBody Department departmentDetails) {
-        Department updatedDepartment = departmentService.updateDepartment(id, departmentDetails);
-        return ResponseEntity.ok(updatedDepartment);
+    public ResponseEntity<?> updateDepartment(@PathVariable Long id, @RequestBody Department departmentDetails) {
+        try {
+            Department updatedDepartment = departmentService.updateDepartment(id, departmentDetails);
+            return ResponseEntity.ok(updatedDepartment);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
     
     @DeleteMapping("/{id}")

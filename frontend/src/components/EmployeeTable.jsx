@@ -48,13 +48,13 @@ const EmployeeTable = ({ searchQuery }) => {
                 emp.lastName?.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 emp.email?.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 emp.position?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                emp.department?.toLowerCase().includes(searchQuery.toLowerCase())
+                (emp.department?.name || emp.department || '')?.toLowerCase().includes(searchQuery.toLowerCase())
             );
         }
 
         // Department filter
         if (departmentFilter) {
-            filtered = filtered.filter(emp => emp.department === departmentFilter);
+            filtered = filtered.filter(emp => (emp.department?.name || emp.department) === departmentFilter);
         }
 
         // Position filter
@@ -111,7 +111,7 @@ const EmployeeTable = ({ searchQuery }) => {
     const exportToCSV = () => {
         const headers = ['ID', 'First Name', 'Last Name', 'Email', 'Position', 'Department'];
         const data = filteredEmployees.map(emp => [
-            emp.id, emp.firstName, emp.lastName, emp.email, emp.position, emp.department
+            emp.id, emp.firstName, emp.lastName, emp.email, emp.position, emp.department?.name || emp.department || ''
         ]);
 
         const csv = [headers, ...data].map(row => row.join(',')).join('\n');
@@ -144,7 +144,7 @@ const EmployeeTable = ({ searchQuery }) => {
     const paginatedEmployees = filteredEmployees.slice(indexOfFirstItem, indexOfLastItem);
     const totalPages = Math.ceil(filteredEmployees.length / itemsPerPage);
 
-    const uniqueDepartments = [...new Set(employees.map(e => e.department).filter(d => d))];
+    const uniqueDepartments = [...new Set(employees.map(e => e.department?.name || e.department).filter(d => d))];
     const uniquePositions = [...new Set(employees.map(e => e.position).filter(p => p))];
 
     const SortIcon = ({ column }) => {
@@ -262,7 +262,7 @@ const EmployeeTable = ({ searchQuery }) => {
                                         <span className="badge badge-primary">{employee.position}</span>
                                     </td>
                                     <td>
-                                        <span className="badge badge-success">{employee.department || 'N/A'}</span>
+                                        <span className="badge badge-success">{employee.department?.name || employee.department || 'N/A'}</span>
                                     </td>
                                     <td>
                                         <div className="flex items-center justify-center gap-2">
